@@ -85,7 +85,7 @@ export default function RelevantProjects() {
         <Preview>
           <PreviewContent>
             <h2>Summary</h2>
-            <img src="src\assets\IMG\Summary.png" className="previewContent" />
+            <img src="./public/assets/IMG/Summary.png" className="previewContent" />
             <PreviewInfo>
               A simple challenge from the site Front-end Mentor, using JS, CSS
               and HTML.
@@ -95,7 +95,7 @@ export default function RelevantProjects() {
         <Preview>
           <PreviewContent>
             <h2>Timer</h2>
-            <img src="src\assets\IMG\Timer.png" className="previewContent" />
+            <img src="./public/assets/IMG/Timer.png" className="previewContent" />
             <PreviewInfo>
               A simple Timer made out of JS, HTML and CSS
             </PreviewInfo>
@@ -105,7 +105,7 @@ export default function RelevantProjects() {
           <PreviewContent>
             <h2>Social Tree</h2>
             <img
-              src="src\assets\IMG\SocialTree.png"
+              src="./public/assets/IMG/SocialTree.png"
               className="previewContent"
             />
             <PreviewInfo>
