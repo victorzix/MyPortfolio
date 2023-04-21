@@ -5,7 +5,7 @@ export default function ProjectsContainer() {
     <ProjectWrapper>
       <Project>
         <div className="projectContent">
-          <img src="./public/assets/IMG/ColorGenerator.png" alt="" />
+          <img src="/assets/IMG/ColorGenerator.png" alt="" />
           <ProjectInfo>
             <b>Technologies: &nbsp;</b> JS, HTML, CSS
           </ProjectInfo>
@@ -20,7 +20,7 @@ export default function ProjectsContainer() {
       </Project>
       <Project>
         <div className="projectContent">
-          <img src="./public/assets/IMG/LoginForm.png" alt="" />
+          <img src="/assets/IMG/LoginForm.png" alt="" />
           <ProjectInfo>
             <b>Technologies: &nbsp;</b> JS, HTML, CSS
           </ProjectInfo>
