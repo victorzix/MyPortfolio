@@ -22,6 +22,11 @@ export const HeaderTitle = styled.div`
   span {
     font-size: 0.7em;
   }
+  @font-face { 
+        font-family: 'Montserrat';
+        src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        } 
+        font-family: 'Montserrat';
 `;
 
 export const Div = styled.div`
