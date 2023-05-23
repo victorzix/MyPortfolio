@@ -7,6 +7,12 @@ export const Div = styled.div`
   flex-direction: column;
   gap: 3em;
   min-height: 80vh;
+  
+  @font-face { 
+        font-family: 'Montserrat';
+        src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        } 
+        font-family: 'Montserrat';
 
   h1{
     text-align: center;
