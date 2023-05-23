@@ -10,6 +10,12 @@ export default function Footer() {
         padding: .5em;
         display: flex;
         justify-content: space-between;
+        
+        @font-face { 
+        font-family: 'Montserrat';
+        src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        } 
+        font-family: 'Montserrat';
 
         a{
             display: none;
