@@ -4,6 +4,10 @@ const Anchor = styled.a`
     text-decoration: none;
     color: var(--dark-blue);
     font-weight: 600;
+
+    &:hover{
+        color: #7e7e7e;
+    }
     
 `;
 const Container = styled.header`
