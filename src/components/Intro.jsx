@@ -2,6 +2,13 @@ import styled from "styled-components";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiJsBadge, DiReact, DiNodejsSmall } from "react-icons/di";
 
+
+function copyEmail(){
+  const email = "victoraphaelnev@gmail.com";
+  navigator.clipboard.writeText(email)
+  alert('Copiado para área de transferência')
+}
+
 const Container = styled.div`
   background-color: var(--dark-blue);
   height: 52em;
@@ -35,6 +42,7 @@ const Container = styled.div`
 
   .occupation {
 
+    margin-bottom: 2em;
     
     .firstLine,
     .secondLine {
@@ -56,6 +64,18 @@ const Container = styled.div`
   }
   img {
     margin-right: 5em;
+  }
+
+  button{
+    padding: .6em 0;
+    width: 15.1em;
+    background-color: var(--txt-yellow);
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--dark-blue);
+    box-shadow: 0px 0px 6px 0px rgba(255,255,255,1);
+    border: 0;
+    cursor: pointer;
   }
 `;
 
@@ -95,6 +115,7 @@ export default function Intro() {
             <span className="icon"><DiNodejsSmall/></span>
           </span>
         </div>
+        <button onClick={copyEmail}>ENTRAR EM CONTATO</button>
       </div>
 
       <div>
