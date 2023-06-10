@@ -12,11 +12,14 @@ const Container = styled.div`
     margin-bottom: 4em;
     h2{
         font-weight: 700;
+        font-size: 2em;
         margin-bottom: .7em;
+        letter-spacing: .4em;
     }
     p{
-        line-height: 1.5em;
+        line-height: 2em;
         font-weight: 600;
+        font-size: 1.2em;
         width: 80%;
     }
   }
