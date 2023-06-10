@@ -34,11 +34,13 @@ const Container = styled.div`
   }
 
   .occupation {
+
+    
     .firstLine,
     .secondLine {
       font-size: 3em;
       line-height: 1em;
-
+      text-shadow: 1px 1px 3px #FFFFFF;
 
       .icon {
         font-size: .6em;
