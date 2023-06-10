@@ -5,9 +5,9 @@ const Container = styled.div`
   width: auto;
   display: flex;
   flex-direction: column;
-  padding: 7em 0;
+  padding: 10em 0;
   align-items: center;
-  height: 45em;
+  height: 55em;
   background-color: var(--dark-blue);
   color: var(--ice-white);
   gap: 8em;
@@ -19,7 +19,9 @@ const Container = styled.div`
 
 const SkillWrapper = styled.div`
   display: flex;
-  gap: 8em;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10em;
 
   .skillContent {
     height: 18em;
