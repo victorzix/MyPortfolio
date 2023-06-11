@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { useState } from "react";
-import { FiGithub } from 'react-icons/fi'
+import { FiGithub } from "react-icons/fi";
 
 const Container = styled.div`
-  height: 55em;
+  height: 50em;
   background-color: var(--iced-white);
   display: flex;
   padding: 10em 10em;
@@ -29,7 +29,7 @@ const Content = styled.div`
   }
   position: relative;
 
-  .projectHover{
+  .projectHover {
     position: absolute;
     bottom: 7em;
     left: 5em;
@@ -37,15 +37,15 @@ const Content = styled.div`
     display: none;
     width: 100%;
 
-    a{
+    a {
       font-size: 1.3em;
       transition: all 100ms ease-in-out;
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
 
-    button{
+    button {
       background: var(--dark-blue);
       color: var(--ice-white);
       border: 0;
@@ -54,21 +54,20 @@ const Content = styled.div`
       transition: all 100ms ease-in-out;
       height: auto;
       padding: 1em;
-      border-radius: .3em;
+      border-radius: 0.3em;
 
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
   }
 
-
-  &:hover .projectHover{
+  &:hover .projectHover {
     display: flex;
     align-items: center;
     gap: 1.5em;
   }
-  &:hover img{
+  &:hover img {
     filter: blur(5px) grayscale(30%);
   }
 `;
@@ -106,8 +105,6 @@ const FrameModal = styled.div`
       transform: scale(1.1);
     }
   }
-
-
 `;
 
 export default function Projects() {
@@ -117,13 +114,10 @@ export default function Projects() {
   function handleClick(e) {
     let el = e.currentTarget;
     const frameLink = el.dataset.link;
-    setLink(() => 
-    { 
-    setModalOpen(true);   
-    return frameLink
-  });
-
-   
+    setLink(() => {
+      setModalOpen(true);
+      return frameLink;
+    });
   }
 
   document.addEventListener("keydown", (e) => {
@@ -140,33 +134,57 @@ export default function Projects() {
     <Container>
       <h1>Projetos Recentes</h1>
       <div className="projectsWrapper">
-        <Content
-          >
+        <Content>
           <img src="src/assets/Projects/news.png" alt="" />
           <div className="projectHover">
-            <a href="https://github.com/victorzix/FrontEndMentor/tree/master/news-homepage-main" target="blank"><FiGithub/></a>
-            <button data-link="https://studies.victoraphael.com.br/news-homepage-main/index.html"
-           onClick={handleClick}>See Live</button>
+            <a
+              href="https://github.com/victorzix/FrontEndMentor/tree/master/news-homepage-main"
+              target="blank"
+            >
+              <FiGithub />
+            </a>
+            <button
+              data-link="https://studies.victoraphael.com.br/news-homepage-main/index.html"
+              onClick={handleClick}
+            >
+              See Live
+            </button>
           </div>
         </Content>
 
-        <Content
-          
-        >
+        <Content>
           <img src="src/assets/Projects/agecalc.png" alt="" />
           <div className="projectHover">
-            <a href="https://github.com/victorzix/FrontEndMentor/tree/master/age-calculator-app-main" target="blank"><FiGithub/></a>
-            <button data-link="https://studies.victoraphael.com.br/age-calculator-app-main/index.html" onClick={handleClick}>See Live</button>
+            <a
+              href="https://github.com/victorzix/FrontEndMentor/tree/master/age-calculator-app-main"
+              target="blank"
+            >
+              <FiGithub />
+            </a>
+            <button
+              data-link="https://studies.victoraphael.com.br/age-calculator-app-main/index.html"
+              onClick={handleClick}
+            >
+              See Live
+            </button>
           </div>
         </Content>
 
-        <Content
-         >
+        <Content>
           <img src="src/assets/Projects/newsletter.png" alt="" />
           <div className="projectHover">
-            <a href="https://github.com/victorzix/FrontEndMentor/tree/master/newsletter-sign-up-with-success-message-main" target="blank"><FiGithub/></a>
-            <button  data-link="https://studies.victoraphael.com.br/newsletter-sign-up-with-success-message-main/index.html"
-         onClick={handleClick}>See Live</button>
+            <a
+              href="https://github.com/victorzix/FrontEndMentor/tree/master/newsletter-sign-up-with-success-message-main"
+              target="blank"
+            >
+              <FiGithub />
+            </a>
+            <button
+              data-link="https://studies.victoraphael.com.br/newsletter-sign-up-with-success-message-main/index.html"
+              onClick={handleClick}
+            >
+              See Live
+            </button>
           </div>
         </Content>
       </div>
