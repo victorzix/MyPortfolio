@@ -147,7 +147,7 @@ export default function Projects() {
               data-link="https://studies.victoraphael.com.br/news-homepage-main/index.html"
               onClick={handleClick}
             >
-              See Live
+              Ver Projeto
             </button>
           </div>
         </Content>
@@ -165,7 +165,7 @@ export default function Projects() {
               data-link="https://studies.victoraphael.com.br/age-calculator-app-main/index.html"
               onClick={handleClick}
             >
-              See Live
+              Ver Projeto
             </button>
           </div>
         </Content>
@@ -183,7 +183,7 @@ export default function Projects() {
               data-link="https://studies.victoraphael.com.br/newsletter-sign-up-with-success-message-main/index.html"
               onClick={handleClick}
             >
-              See Live
+              Ver Projeto
             </button>
           </div>
         </Content>
