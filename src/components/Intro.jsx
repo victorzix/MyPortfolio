@@ -33,6 +33,7 @@ const Container = styled.div`
     }
     a:hover{
         transform: scale(1.05);
+        color: var(--txt-yellow);
     }
     .name {
       color: var(--txt-yellow);
