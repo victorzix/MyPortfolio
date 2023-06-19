@@ -50,9 +50,9 @@ export default function Footer() {
       <h1>OBRIGADO POR LER ATÉ AQUI</h1>
       <p>Você pode me encontrar em</p>
       <div className="links" id="links">
-        <a href="" className="link"><AiFillLinkedin/></a>
-        <a href="" className="link"><AiFillGithub/></a>
-        <a href="" className="link"> <FaInstagram/></a>
+        <a href="http://github.com/victorzix" target="blank" className="link"><AiFillLinkedin/></a>
+        <a href="https://www.linkedin.com/in/victorphael/" target="blank" className="link"><AiFillGithub/></a>
+        <a href="https://www.instagram.com/pzravi/" target="blank" className="link"> <FaInstagram/></a>
       </div>
       <span className="email">victoraphaelnev@gmail.com</span>
     </Div>
