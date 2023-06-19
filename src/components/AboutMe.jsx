@@ -28,7 +28,7 @@ export default function AboutMe() {
   return (
     <Container id="about">
       <div className="char">
-        <img src="src/assets/aboutme.svg" alt="" />
+        <img src="/assets/aboutme.svg" alt="" />
       </div>
       <div className="description">
         <h2>SOBRE MIM</h2>

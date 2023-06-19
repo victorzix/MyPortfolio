@@ -124,7 +124,7 @@ export default function Intro() {
       </div>
 
       <div>
-        <img src="src\assets\intronotebook.svg" alt="" />
+        <img src="/assets/intronotebook.svg" alt="" />
       </div>
     </Container>
   );

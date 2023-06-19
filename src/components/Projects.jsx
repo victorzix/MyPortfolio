@@ -135,7 +135,7 @@ export default function Projects() {
       <h1>Projetos Recentes</h1>
       <div className="projectsWrapper">
         <Content>
-          <img src="src/assets/Projects/news.png" alt="" />
+          <img src="/assets/Projects/news.png" alt="" />
           <div className="projectHover">
             <a
               href="https://github.com/victorzix/FrontEndMentor/tree/master/news-homepage-main"
@@ -153,7 +153,7 @@ export default function Projects() {
         </Content>
 
         <Content>
-          <img src="src/assets/Projects/agecalc.png" alt="" />
+          <img src="/assets/Projects/agecalc.png" alt="" />
           <div className="projectHover">
             <a
               href="https://github.com/victorzix/FrontEndMentor/tree/master/age-calculator-app-main"
@@ -171,7 +171,7 @@ export default function Projects() {
         </Content>
 
         <Content>
-          <img src="src/assets/Projects/newsletter.png" alt="" />
+          <img src="/assets/Projects/newsletter.png" alt="" />
           <div className="projectHover">
             <a
               href="https://github.com/victorzix/FrontEndMentor/tree/master/newsletter-sign-up-with-success-message-main"

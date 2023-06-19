@@ -108,7 +108,7 @@ export default function Skills() {
         </div>
         <div className="skillContent styledComponents">
           <div className="icon">
-            <img src="src/assets/styled-components.svg" />
+            <img src="/assets/styled-components.svg" />
           </div>
           <div className="description">
             <h3>Styled-Components</h3>
