@@ -11,7 +11,7 @@ function copyEmail(){
 
 const Container = styled.div`
   background-color: var(--dark-blue);
-  height: 60em;
+  height: 55em;
   color: var(--ice-white);
   font-weight: 900;
   display: flex;
