@@ -74,7 +74,7 @@ const SkillWrapper = styled.div`
 `;
 export default function Skills() {
   return (
-    <Container>
+    <Container id="skills">
       <h1>TECNOLOGIAS E CONHECIMENTOS</h1>
       <SkillWrapper>
         <div className="skillContent react">
