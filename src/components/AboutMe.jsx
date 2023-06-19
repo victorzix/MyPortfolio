@@ -26,7 +26,7 @@ const Container = styled.div`
 `;
 export default function AboutMe() {
   return (
-    <Container>
+    <Container id="about">
       <div className="char">
         <img src="src/assets/aboutme.svg" alt="" />
       </div>
