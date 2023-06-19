@@ -3,9 +3,11 @@ import Intro from "./components/Intro"
 import AboutMe from "./components/AboutMe"
 import Skills from "./components/Skills"
 import Projects from "./components/Projects"
+import Footer from "./components/Footer"
+import {BackToTopBtn} from "./utils/utils"
+
 
 function App() {
-
   return (
     <>
     <Header/>     
@@ -13,6 +15,8 @@ function App() {
     <AboutMe/>
     <Skills/>
     <Projects/>
+    <Footer/>
+    <BackToTopBtn/>
     </>
   )
 }
