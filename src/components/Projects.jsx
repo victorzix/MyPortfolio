@@ -131,7 +131,7 @@ export default function Projects() {
     setModalOpen(false);
   }
   return (
-    <Container>
+    <Container id="projects">
       <h1>Projetos Recentes</h1>
       <div className="projectsWrapper">
         <Content>
