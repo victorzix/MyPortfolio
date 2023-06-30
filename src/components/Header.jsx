@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 
 const Container = styled.header`
   height: 6em;
@@ -11,7 +11,6 @@ const Container = styled.header`
   position: sticky;
   top: 0;
   width: 100%;
-
 
   @keyframes fillHover {
     from {
@@ -50,15 +49,53 @@ const Container = styled.header`
       cursor: pointer;
     }
   }
+  /* Large */
+  @media (max-width: 1366px) {
+    padding: 0 6em;
+  }
+
+  /* Medium */
+  @media (max-width: 1007px) {
+  }
+  /* Small */
+  @media (max-width: 640px) {
+  }
 `;
 
 export default function Header() {
   return (
     <Container>
       <div>
-        <Link to="about" spy={true} smooth={true} offset={-90} duration={500} className="anchor" >Sobre mim</Link>
-        <Link to="skills" spy={true} smooth={true} offset={-90} duration={500} className="anchor" >Habilidades</Link>
-        <Link to="projects" spy={true} smooth={true} offset={-120} duration={500} className="anchor" >Projetos</Link>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={500}
+          className="anchor"
+        >
+          Sobre mim
+        </Link>
+        <Link
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={500}
+          className="anchor"
+        >
+          Habilidades
+        </Link>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={500}
+          className="anchor"
+        >
+          Projetos
+        </Link>
       </div>
 
       <a className="anchor" href="#">

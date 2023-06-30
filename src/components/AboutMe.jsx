@@ -8,20 +8,49 @@ const Container = styled.div`
   padding: 0 10em;
   gap: 20em;
 
-  .description{
+  .description {
     margin-bottom: 4em;
-    h2{
-        font-weight: 700;
-        font-size: 2em;
-        margin-bottom: .7em;
-        letter-spacing: .4em;
+    h2 {
+      font-weight: 700;
+      font-size: 2em;
+      margin-bottom: 0.7em;
+      letter-spacing: 0.4em;
     }
-    p{
-        line-height: 2em;
-        font-weight: 600;
-        font-size: 1.2em;
-        width: 80%;
+    p {
+      line-height: 2em;
+      font-weight: 600;
+      font-size: 1.2em;
+      width: 80%;
     }
+  }
+  /* Large */
+  @media (max-width: 1500px) {
+    padding: 0 4em;
+    justify-content: space-between;
+    gap: 4em;
+    align-items: center;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  /* Medium */
+  @media (max-width: 1280px) {
+    padding: 0 2em;
+    gap: 6em;
+
+    .description {
+      h2 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+  /* Small */
+  @media (max-width: 640px) {
   }
 `;
 export default function AboutMe() {

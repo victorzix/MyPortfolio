@@ -36,14 +36,18 @@ const GlobalStyle = createGlobalStyle`
 }
   body {
     height: 100vh;
-    width: auto;
   }
+    /* Large */
+  @media (max-width: 1366px) {
 
-  @media(max-width: 400px){
-    body{
-        height: 100svh;
-        width: auto;
-    }
+  }
+  /* Medium */
+  @media (max-width: 1007px) {
+
+  }
+  /* Small */
+  @media (max-width: 640px) {
+
   }
 `;
 

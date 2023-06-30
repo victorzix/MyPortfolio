@@ -71,6 +71,50 @@ const SkillWrapper = styled.div`
       font-size: 2.5em;
     }
   }
+  /* Large */
+  @media (max-width: 1366px) {
+    padding: 0 6em;
+    .skillContent{
+      height: 16em;
+      width: 14em;
+    }
+  }
+  /* Medium */
+  @media (max-width: 1150px) {
+    padding: 0 2em;
+    .skillContent{
+      height: 15em;
+      width: 13em;
+    }
+    
+
+
+  .skillContent {
+    border-radius: 1em;
+    background-color: var(--ice-white);
+    display: flex;
+    align-items: center;
+    padding: 2em 1em;
+    flex-direction: column;
+    gap: 0.4em;
+
+    .description {
+      color: var(--dark-blue);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5em;
+
+      p {
+        line-height: 1.6em;
+      }
+    }
+  }
+    
+  }
+  /* Small */
+  @media (max-width: 640px) {
+  }
 `;
 export default function Skills() {
   return (
