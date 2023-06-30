@@ -20,6 +20,15 @@ const Container = styled.div`
     justify-content: center;
     padding: 0;
   }
+  @media (max-width: 640px) {
+    gap: 0;
+    align-items: center;
+
+    h1{
+      font-size: 1em;
+    }
+  }
+
 `;
 
 const SkillWrapper = styled.div`
@@ -165,6 +174,57 @@ const SkillWrapper = styled.div`
   }
   /* Small */
   @media (max-width: 640px) {
+    display: flex;
+    width: 100%;
+    padding: 0 1em;
+    align-items: center;
+
+    .skillContent {
+      border-radius: 1em;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0em;
+
+      .description {
+        color: var(--ice-white);
+        font-size: .5em;
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .react {
+      .icon {
+        color: #00d8ff;
+        font-size: 2rem;
+      }
+    }
+    .javascript {
+      .icon {
+        color: #f7df1e;
+        border: 0;
+        font-size: 2rem;
+      }
+    }
+    .node {
+      .icon {
+        color: #83cd29;
+        font-size: 2rem;
+      }
+    }
+    .styledComponents {
+
+      img{
+        width: 1em;
+      }
+      .icon {
+        font-size: 2rem;
+      }
+    }
   }
 `;
 export default function Skills() {
@@ -202,6 +262,7 @@ export default function Skills() {
           </div>
         </div>
         <div className="skillContent styledComponents">
+          <div></div>
           <div className="icon">
             <img src="/assets/styled-components.svg" />
           </div>

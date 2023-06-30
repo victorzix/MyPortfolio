@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
+import { FaArrowUp} from "react-icons/fa"
 
 const Button = styled.button`
   position: fixed;
@@ -25,10 +26,26 @@ const Button = styled.button`
     return props.backToTopButton ? "25px" : "-150px";
   }};
   }
+
+  @media(max-width: 840px){
+    z-index: 100;
+    bottom: 50px;
+    height: 3em;
+    width: 3em;
+    border-radius: 1.5em;
+    padding: 0;
+
+    right: ${(props) => {
+    return props.backToTopButton ? "25px" : "-150px";
+  }};
+  }
 `;
 
 export function BackToTopBtn() {
   const [backToTopButton, setBackToTopButton] = useState(false);
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
+  
+  const width = windowSize.current[0];
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -47,6 +64,13 @@ export function BackToTopBtn() {
     });
   }
 
+if(width <= 640){
+  return(
+    <Button onClick={scrollUp} backToTopButton={backToTopButton}>
+      < FaArrowUp/>
+    </Button>
+  )
+}
   return (
     <>
       <Button onClick={scrollUp} backToTopButton={backToTopButton}>

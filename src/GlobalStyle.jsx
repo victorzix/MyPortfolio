@@ -26,12 +26,27 @@ const GlobalStyle = createGlobalStyle`
       background-color: var(--txt-yellow);
      }
     }
-
-    ::-webkit-scrollbar-thumb:hover{
-      
-
+    
+    @media (max-width: 840px) {
+      ::-webkit-scrollbar{
+      width: 0;
+      display: none;
     }
 
+    ::-webkit-scrollbar-track{
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb{
+     background-color: transparent;
+     border-radius: 0;
+     border: 0;
+
+     &:hover{
+      background-color: var(--txt-yellow);
+     }
+    }
+  }
     
 }
   body {

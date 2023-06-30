@@ -84,6 +84,36 @@ const Container = styled.div`
   }
   /* Small */
   @media (max-width: 640px) {
+  height: 100vh;
+  background-color: var(--ice-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .char{
+    display: none;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+    text-align: center;
+    width: 100%;
+    h2 {
+      font-weight: 900;
+      font-size: 1.5em;
+      margin-bottom: 0.7em;
+      letter-spacing: 0.2em;
+    }
+    p {
+      line-height: 2em;
+      font-weight: 600;
+      font-size: .9em;
+    }
+  }
   }
 `;
 export default function AboutMe() {

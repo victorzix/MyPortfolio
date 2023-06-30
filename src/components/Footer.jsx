@@ -56,6 +56,26 @@ const Div = styled.div`
       }
     }
   }
+
+  @media(max-width: 640px){
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    letter-spacing: .25em;
+    h1{
+      font-size: .8em;
+    }
+    p{
+      font-size: .6em;
+    }
+    .links{
+      gap: 1.6em;
+      a{
+        font-size: 1.7em;
+      }
+    }
+  }
+
 `;
 
 export default function Footer() {

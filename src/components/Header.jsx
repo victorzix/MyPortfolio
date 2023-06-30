@@ -90,6 +90,35 @@ const Container = styled.header`
 
   /* Small */
   @media (max-width: 640px) {
+    height: 3em;
+    background-color: var(--ice-white);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    font-size: .8em;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2em;
+
+    div {
+      display: flex;
+      width: 100%;
+      gap: 2em;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .anchor {
+      text-decoration: none;
+      color: var(--dark-blue);
+      font-weight: 600;
+    }
+
+    @media(min-height: 600px){
+      height: 4em;
+    }
   }
 `;
 
