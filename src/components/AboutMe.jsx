@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 55em;
+  height: 100vh;
   background-color: var(--ice-white);
   display: flex;
   align-items: center;
@@ -48,6 +48,39 @@ const Container = styled.div`
         font-size: 1em;
       }
     }
+  }
+
+  @media (max-width: 840px) {
+  height: 100vh;
+  background-color: var(--ice-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .char{
+    display: none;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+    text-align: center;
+    width: 100%;
+    h2 {
+      font-weight: 900;
+      font-size: 2.5em;
+      margin-bottom: 0.7em;
+      letter-spacing: 0.2em;
+    }
+    p {
+      line-height: 2em;
+      font-weight: 600;
+      font-size: 1.4em;
+    }
+  }
   }
   /* Small */
   @media (max-width: 640px) {

@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { FiGithub } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa"
+import { useRef } from "react";
 
 const Container = styled.div`
-  height: 50em;
+  height: 100vh;
   background-color: var(--iced-white);
   display: flex;
   padding: 10em 10em;
@@ -26,12 +28,32 @@ const Container = styled.div`
     padding: 10em 6em;
     gap: 10em;
 
-    .projectsWrapper{
+    .projectsWrapper {
       justify-content: space-around;
     }
   }
   /* Medium */
-  @media (max-width: 1007px) {
+  @media (max-width: 840px) {
+    height: 100vh;
+    background-color: var(--ice-white);
+    display: flex;
+    padding: 0 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+
+    h1 {
+      letter-spacing: 0.3em;
+      font-size: 2.3em;
+    }
+
+    .projectsWrapper {
+      display: flex;
+      justify-content: center;
+      gap: 6em;
+      width: 100%;
+    }
   }
   /* Small */
   @media (max-width: 640px) {
@@ -93,12 +115,50 @@ const Content = styled.div`
       width: 15em;
       transition: 200ms all ease-in-out;
     }
-    .projectWrapper{
-
-    }
   }
   /* Medium */
-  @media (max-width: 1007px) {
+  @media (max-width: 840px) {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    &:nth-child(2) {
+      img {
+        width: 15em;
+      }
+    }
+    img {
+      width: 8em;
+    }
+    position: relative;
+
+    .projectHover {
+      display: none;
+    }
+
+    &:hover .projectHover {
+      display: none;
+      align-items: none;
+      gap: none;
+    }
+    &:hover img {
+      filter: none;
+    }
+
+    .description {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      align-items: center;
+      a {
+        text-decoration: none;
+        font-size: 2em;
+        color: var(--dark-blue);
+      }
+    }
   }
   /* Small */
   @media (max-width: 640px) {
@@ -140,7 +200,48 @@ const FrameModal = styled.div`
   }
 `;
 
+function ProjectsMobile() {
+  return (
+    <Container id="projects">
+      <h1>Projetos Recentes</h1>
+      <div className="projectsWrapper">
+        <Content>
+          <img src="/assets/Projects/newsmobile.png" alt="" />
+          <div className="description">
+            <a href="" className="github">
+              < FaGithub />
+            </a>
+          </div>
+        </Content>
+
+        <Content>
+          <div />
+          <img src="/assets/Projects/agecalcmobile.png" alt="" />
+          <div className="description">
+            <a href="" className="github">
+              < FaGithub />
+            </a>
+
+          </div>
+        </Content>
+
+        <Content>
+          <img src="/assets/Projects/newslettermobile.png" alt="" />
+          <div className="description">
+            <a href="" className="github">
+              < FaGithub />
+            </a>
+
+          </div>
+        </Content>
+      </div>
+    </Container>
+  );
+}
+
 export default function Projects() {
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
+
   const [link, setLink] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -163,6 +264,12 @@ export default function Projects() {
     setLink(null);
     setModalOpen(false);
   }
+
+  console.log(windowSize.current[0]);
+  if (windowSize.current[0] <= 840) {
+    return <ProjectsMobile />;
+  }
+
   return (
     <Container id="projects">
       <h1>Projetos Recentes</h1>

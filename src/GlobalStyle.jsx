@@ -42,8 +42,7 @@ const GlobalStyle = createGlobalStyle`
 
   }
   /* Medium */
-  @media (max-width: 1007px) {
-
+  @media (max-width: 840px) {
   }
   /* Small */
   @media (max-width: 640px) {

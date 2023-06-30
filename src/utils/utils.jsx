@@ -16,6 +16,15 @@ const Button = styled.button`
   color: var(--dark-blue);
   transition: all ease-in-out 1s;
   cursor: pointer;
+
+  @media(max-width: 840px){
+    z-index: 100;
+    bottom: 150px;
+
+    right: ${(props) => {
+    return props.backToTopButton ? "25px" : "-150px";
+  }};
+  }
 `;
 
 export function BackToTopBtn() {

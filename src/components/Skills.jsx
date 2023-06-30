@@ -7,13 +7,18 @@ const Container = styled.div`
   flex-direction: column;
   padding: 10em 0;
   align-items: center;
-  height: 55em;
+  height: 100vh;
   background-color: var(--dark-blue);
   color: var(--ice-white);
   gap: 8em;
 
   h1 {
     color: var(--txt-yellow);
+  }
+
+  @media (max-width: 840px) {
+    justify-content: center;
+    padding: 0;
   }
 `;
 
@@ -74,7 +79,7 @@ const SkillWrapper = styled.div`
   /* Large */
   @media (max-width: 1366px) {
     padding: 0 6em;
-    .skillContent{
+    .skillContent {
       height: 16em;
       width: 14em;
     }
@@ -82,35 +87,81 @@ const SkillWrapper = styled.div`
   /* Medium */
   @media (max-width: 1150px) {
     padding: 0 2em;
-    .skillContent{
+    .skillContent {
       height: 15em;
       width: 13em;
     }
-    
 
-
-  .skillContent {
-    border-radius: 1em;
-    background-color: var(--ice-white);
-    display: flex;
-    align-items: center;
-    padding: 2em 1em;
-    flex-direction: column;
-    gap: 0.4em;
-
-    .description {
-      color: var(--dark-blue);
+    .skillContent {
+      border-radius: 1em;
+      background-color: var(--ice-white);
       display: flex;
+      align-items: center;
+      padding: 2em 1em;
       flex-direction: column;
-      text-align: center;
-      gap: 0.5em;
+      gap: 0.4em;
 
-      p {
-        line-height: 1.6em;
+      .description {
+        color: var(--dark-blue);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5em;
+
+        p {
+          line-height: 1.6em;
+        }
       }
     }
   }
-    
+
+  @media (max-width: 840px) {
+    display: flex;
+    width: 100%;
+    padding: 0 1em;
+    align-items: center;
+
+    .skillContent {
+      border-radius: 1em;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.7em;
+
+      .description {
+        color: var(--ice-white);
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .react {
+      .icon {
+        color: #00d8ff;
+        font-size: 6rem;
+      }
+    }
+    .javascript {
+      .icon {
+        color: #f7df1e;
+        border: 0;
+        font-size: 6rem;
+      }
+    }
+    .node {
+      .icon {
+        color: #83cd29;
+        font-size: 6rem;
+      }
+    }
+    .styledComponents {
+      .icon {
+        font-size: 6rem;
+      }
+    }
   }
   /* Small */
   @media (max-width: 640px) {

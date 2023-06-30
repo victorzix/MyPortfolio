@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { useRef } from "react";
 
 const Container = styled.header`
   height: 6em;
@@ -8,9 +9,9 @@ const Container = styled.header`
   align-items: center;
   background-color: var(--ice-white);
   padding: 0 10em;
-  position: sticky;
-  top: 0;
+  position: fixed;
   width: 100%;
+  z-index: 99;
 
   @keyframes fillHover {
     from {
@@ -55,14 +56,49 @@ const Container = styled.header`
   }
 
   /* Medium */
-  @media (max-width: 1007px) {
+  @media (max-width: 840px) {
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ice-white);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    
+    .anchor {
+      text-decoration: none;
+      color: var(--dark-blue);
+      font-weight: 600;
+      height: auto;
+    }
+
+    .resume{
+      display: none;
+    }
+
+
   }
+
+
   /* Small */
   @media (max-width: 640px) {
   }
 `;
 
 export default function Header() {
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
+  
+  const width = windowSize.current[0];
+  const offSet = width <= 840? 0 : -90;
+
   return (
     <Container>
       <div>
@@ -70,7 +106,7 @@ export default function Header() {
           to="about"
           spy={true}
           smooth={true}
-          offset={-90}
+          offset={offSet}
           duration={500}
           className="anchor"
         >
@@ -80,7 +116,7 @@ export default function Header() {
           to="skills"
           spy={true}
           smooth={true}
-          offset={-90}
+          offset={offSet}
           duration={500}
           className="anchor"
         >
@@ -90,7 +126,7 @@ export default function Header() {
           to="projects"
           spy={true}
           smooth={true}
-          offset={-90}
+          offset={offSet}
           duration={500}
           className="anchor"
         >
@@ -98,7 +134,7 @@ export default function Header() {
         </Link>
       </div>
 
-      <a className="anchor" href="#">
+      <a className="anchor resume" href="#">
         CURRICULO
       </a>
     </Container>
