@@ -84,11 +84,11 @@ export default function Footer() {
       <h1>OBRIGADO POR LER ATÉ AQUI</h1>
       <p>Você pode me encontrar em</p>
       <div className="links" id="links">
-        <a href="http://github.com/victorzix" target="blank" className="link">
+        <a href="https://www.linkedin.com/in/victorphael/" target="blank" className="link">
           <AiFillLinkedin />
         </a>
         <a
-          href="https://www.linkedin.com/in/victorphael/"
+          href="http://github.com/victorzix"
           target="blank"
           className="link"
         >
