@@ -64,7 +64,7 @@ export function BackToTopBtn() {
     });
   }
 
-if(width <= 640){
+if(width <= 840){
   return(
     <Button onClick={scrollUp} backToTopButton={backToTopButton}>
       < FaArrowUp/>

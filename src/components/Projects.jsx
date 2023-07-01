@@ -269,7 +269,7 @@ function ProjectsMobile() {
         <Content>
           <img src="/assets/Projects/newsmobile.png" alt="" />
           <div className="description">
-            <a href="" className="github">
+            <a href="https://github.com/victorzix/FrontEndMentor/tree/master/news-homepage-main" className="github">
               < FaGithub />
             </a>
           </div>
@@ -279,7 +279,7 @@ function ProjectsMobile() {
           <div />
           <img src="/assets/Projects/agecalcmobile.png" alt="" />
           <div className="description">
-            <a href="" className="github">
+            <a href="https://github.com/victorzix/FrontEndMentor/tree/master/age-calculator-app-main" className="github">
               < FaGithub />
             </a>
 
@@ -289,7 +289,7 @@ function ProjectsMobile() {
         <Content>
           <img src="/assets/Projects/newslettermobile.png" alt="" />
           <div className="description">
-            <a href="" className="github">
+            <a href="https://github.com/victorzix/FrontEndMentor/tree/master/newsletter-sign-up-with-success-message-main" className="github">
               < FaGithub />
             </a>
 
