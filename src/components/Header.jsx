@@ -163,7 +163,7 @@ export default function Header() {
         </Link>
       </div>
 
-      <a className="anchor resume" href="#">
+      <a className="anchor resume" href="/victorcurr.pdf">
         CURRICULO
       </a>
     </Container>
